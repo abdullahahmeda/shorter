@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Router>
+      <Router basepath="/shorter">
         <UrlShortener path="/" />
         <About path="/about" />
         <Redirector path="/:link" />
