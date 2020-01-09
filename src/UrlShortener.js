@@ -3,7 +3,7 @@ import { isUri } from "valid-url";
 import "./css/UrlShortener.css";
 import { writeLink } from "./firebase/databaseMethods";
 
-const BASE_URI = window.location.origin + "/shorter";
+const BASE_URI = window.location.origin;
 
 const UrlShortener = () => {
   const [uri, setUri] = useState("");

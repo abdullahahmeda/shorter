@@ -20,18 +20,18 @@ const Navbar = () => {
   return (
     <nav className="Navbar">
       <div className="container d-flex wrapper">
-        <Link to="/shorter">
+        <Link to="/">
           <img src={logo} alt="Logo" />
         </Link>
 
         <ul className="desktop-menu li-none">
           <li>
-            <NavLink className="td-none" to="/shorter">
+            <NavLink className="td-none" to="/">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink className="td-none" to="/shorter/about">
+            <NavLink className="td-none" to="/about">
               About Me
             </NavLink>
           </li>
@@ -51,12 +51,12 @@ const Navbar = () => {
           </button>
           <ul className="mobile-menu" id="mobile-menu" role="region">
             <li className="li-none">
-              <NavLink className="td-none" to="/shorter">
+              <NavLink className="td-none" to="/">
                 Home
               </NavLink>
             </li>
             <li className="li-none">
-              <NavLink className="td-none" to="/shorter/about">
+              <NavLink className="td-none" to="/about">
                 About
               </NavLink>
             </li>
