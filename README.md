@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+** Note: since no server-side routes handling, all shorted links won't work, and that's why there's no preview.
+But you can clone this repo on your local machine, run `npm install` then `npm start` and all functionality will work well.
+
 ## Available Scripts
 
 In the project directory, you can run:
