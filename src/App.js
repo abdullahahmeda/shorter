@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./css/App.css";
+import Navbar from "./Navbar";
+import UrlShortener from "./UrlShortener";
+import About from "./About";
+import Redirector from "./Redirector";
+import { Router } from "@reach/router";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Router>
+        <UrlShortener path="/" />
+        <About path="/about" />
+        <Redirector path="/:link" />
+      </Router>
     </div>
   );
 }

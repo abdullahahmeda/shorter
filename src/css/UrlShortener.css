@@ -1,0 +1,58 @@
+.UrlShortener-wrapper {
+  margin-top: 1rem;
+}
+
+.UrlShortener {
+  background: #0a79af;
+  padding: 1.3rem 1.4rem;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.url-field:after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #900;
+}
+
+.field {
+  flex-direction: column;
+  margin-bottom: 0.2rem;
+}
+
+.url-field {
+  background: #fff;
+  padding: 0.5rem 0.3rem;
+  outline: none;
+  border: none;
+}
+
+.url-field:focus ~ .field-focus {
+  width: 100%;
+}
+
+.field-focus {
+  display: block;
+  height: 3px;
+  background: #2a2a2a;
+  left: 0;
+  bottom: 0;
+  transition: width 290ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  width: 0;
+}
+
+.shorten-button {
+  margin-left: auto;
+  background: var(--offwhite);
+  border: none;
+  padding: 0.7rem;
+  border-radius: 3px;
+  transition: all 290ms ease;
+}
+
+.shorten-button:hover,
+.shorten-button:focus {
+  filter: brightness(85%);
+}

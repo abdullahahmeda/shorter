@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  --blue: #07587f;
+  --offwhite: #e6e8e8;
+}
