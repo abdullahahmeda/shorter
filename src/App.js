@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Navbar />
       <Router>
-        <UrlShortener path="/" />
-        <About path="/about" />
-        <Redirector path="/:link" />
+        <UrlShortener path="/shorter" />
+        <About path="/shorter/about" />
+        <Redirector path="/shorter/:link" />
       </Router>
     </div>
   );
