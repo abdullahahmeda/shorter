@@ -1,7 +1,6 @@
 {
   "name": "url-shortener",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@reach/router": "^1.2.1",
     "@testing-library/jest-dom": "^4.2.4",
@@ -16,8 +15,6 @@
     "valid-url": "^1.0.9"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "node server/index",
     "build": "react-scripts build",
     "test": "react-scripts test",
